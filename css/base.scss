@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import "functions.scss";
+
+
+@mixin radius($value){
+  -webkit-border-radius:$value;
+  -moz-border-radius:$value;
+  border-radius:$value;
+}
+
+@mixin font-double($value){
+  font-size:$value * 2;
+}
+
+%flex-row{
+  display: flex;
+  flex-flow:row wrap;
+}
+
+%Ui-kit-button{
+  cursor:pointer;
+  width:24px;
+  height:xs24px;
+}
+
+%ui-aba-kit{
+  cursor:pointer;
+}
+
+%flex-column{
+  display: flex;
+  flex-flow:column nowrap;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family:$font;
+  background:#fff;
+}
+/*
+*   deixa a font cursiva
+*/
+h1 > .-cursive{
+  color:#fff;
+}
+.font-heavy{
+  font-weight: 800;
+}
+.-cursive{
+  font-family:$brand-font;
+  font-size: 3em;
+}
+.-full-screen {
+  height: 100vh;
+}
+
+.-half-screen {
+  height: 50vh;
+}
+
+.-center-text {
+  text-align: center;
+}

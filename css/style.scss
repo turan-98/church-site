@@ -1,0 +1,16 @@
+@import "base.scss","main.scss","menu.scss","buttons.scss";
+h1 > .-cursive{
+    color:$primary-color;
+  }
+  .-font-heavy{
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  .-font-normal{
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+  .-cursive{
+    font-family:$brand-font;
+    font-size: 3em;
+  }

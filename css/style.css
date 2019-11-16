@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+.banner-home, .main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #fff;
+}
+
+/*
+*   deixa a font cursiva
+*/
+h1 > .-cursive {
+  color: #fff;
+}
+
+.font-heavy {
+  font-weight: 800;
+}
+
+.-cursive {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.-full-screen {
+  height: 100vh;
+}
+
+.-half-screen {
+  height: 50vh;
+}
+
+.-center-text {
+  text-align: center;
+}
+
+.banner {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.banner-home {
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 450px) {
+  .banner-home {
+    background-position: center;
+    height: 100vh;
+  }
+}
+
+.little-about-us {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  overflow: hidden;
+}
+.little-about-us .cards {
+  flex-basis: 300px;
+  margin: 1em;
+}
+.little-about-us .cards > .text {
+  margin: 1em;
+}
+
+.grid {
+  flex-basis: 500px;
+  padding: 2em;
+  display: block;
+  background-image: url("https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid > .responsive {
+  width: 75%;
+  height: auto;
+}
+@media screen and (max-width: 450px) {
+  .grid > .responsive {
+    width: 40%;
+  }
+}
+.grid > .white-board {
+  position: absolute;
+  display: block;
+  height: 25px;
+  width: 100;
+  padding: 5px 10px;
+  margin-top: -3rem;
+}
+
+.white-board > h2 {
+  font-size: 2em;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.text {
+  margin: 1rem;
+}
+.text > p {
+  margin-top: 2em;
+  border-left: 2px solid whitesmoke;
+  padding: 10px;
+  padding-left: 15px;
+  color: #BFBFBF;
+  text-align: justify;
+  line-height: 1cm;
+}
+
+.center-element {
+  display: flex;
+  justify-content: center;
+}
+.center-element > h3 {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.center-element > h3::after {
+  display: block;
+  content: " ";
+  width: 55px;
+  height: 6px;
+  border-bottom: 2px solid #0d0d0d;
+}
+
+.toggle {
+  display: block;
+  height: 5px;
+  width: 30px;
+  margin: 8px;
+  padding: 15px 10px;
+  left: 210px;
+  position: absolute;
+  cursor: pointer;
+}
+.toggle > span {
+  display: block;
+  position: absolute;
+  background: #f2f2f2;
+  width: 25px;
+  height: 2px;
+  transition: 0.5s;
+  box-shadow: 0 1px 1px black;
+}
+
+.toggle span:nth-child(1) {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.toggle span:nth-child(4) {
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+
+.toggle.-active:hover span:nth-child(1) {
+  transform: translateY(-35px);
+  opacity: 0;
+}
+
+.toggle.-active:hover span:nth-child(4) {
+  transform: translateY(35px);
+  opacity: 0;
+}
+
+.toggle.-active:hover span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.toggle.-active:hover span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.-hidden {
+  left: 0px;
+  transition: 0.5s linear;
+}
+
+.menu {
+  background: #fff;
+  width: 200px;
+  height: 100vh;
+  margin: 0;
+  position: fixed;
+  transition: 0.5s linear;
+  left: -200px;
+}
+.menu .list {
+  padding: 15px 10px;
+}
+
+.list {
+  height: 10vh;
+  border-bottom: 1px solid #f2f2f2;
+}
+.list > a {
+  font-size: 1.3em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #737373;
+  text-transform: capitalize;
+}
+.list:nth-child(6) {
+  display: flex;
+  justify-content: center;
+  margin-top: 6em;
+}
+
+.social-btn-outline {
+  background: none;
+  border: none;
+  width: 25px;
+  margin: 8px;
+  height: 25px;
+}
+.social-btn-outline > .fab {
+  font-size: 1.5em;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+h1 > .-cursive {
+  color: #ffffff;
+}
+
+.-font-heavy {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.-font-normal {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.-cursive {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+/*# sourceMappingURL=style.css.map */
