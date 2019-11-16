@@ -1,0 +1,8 @@
+var $menu = document.querySelector('#button-menu'),
+    $nav = document.querySelector('#navbar'),
+    $link = document.querySelector('link-item');
+
+    $menu.addEventListener("click",
+    function(){
+      $nav.classList.toggle("-hidden");
+    },false);
